@@ -23,4 +23,7 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     
