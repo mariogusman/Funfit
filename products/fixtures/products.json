@@ -1,0 +1,422 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5001340155",
+         "name": "Orange Phasing Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 49.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "leggings01.jpg"
+      }
+   },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5001600425",
+         "name": "Black and White Pattern Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 49.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "leggings02.jpg"
+      }
+   },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5001730010",
+         "name": "Seafoam Print Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 49.99,
+         "category": 1,
+         "rating": 4.7,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "leggings03.jpg"
+      }
+   },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5001890157",
+         "name": "Underwater Print Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 34.99,
+         "category": 1,
+         "rating": 3,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "leggings04.jpg"
+      }
+   },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002111605",
+         "name": "Orange Courtfield Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 34.99,
+         "category": 1,
+         "rating": 5,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "leggings05.jpg"
+      }
+   },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002260206",
+         "name": "Red Courtfield Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 34.99,
+         "category": 1,
+         "rating": 4.7,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "leggings06.jpg"
+      }
+   },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002440521",
+         "name": "Pink Courtfield Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 34.99,
+         "category": 1,
+         "rating": 4.4,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "leggings07.jpg"
+      }
+   },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002601115",
+         "name": "Magenta Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 29.99,
+         "category": 1,
+         "rating": 4.5,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "leggings08.jpg"
+      }
+   },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002690715",
+         "name": "Black Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 29.99,
+         "category": 1,
+         "rating": 4.7,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "leggings09.jpg"
+      }
+   },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002701115",
+         "name": "Rose Gold Legging",
+         "description": "Legging with a beautiful print. It is a thicker mesh that helps disguise possible imperfections, provides more firmness, comfort, and is not transparent. Ideal for physical exercise.",
+         "price": 29.99,
+         "category": 1,
+         "rating": 4.4,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0418201317011949M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "leggings10.jpg"
+      }
+   },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002761055",
+         "name": "Military Green Mesh Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 29.99,
+         "category": 2,
+         "rating": 3,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/0900631B81B0C2D9M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shirts01.jpg"
+      }
+   },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002820069",
+         "name": "White Mesh Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 19.99,
+         "category": 2,
+         "rating": 4.6,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0510201317010521M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shirts02.jpg"
+      }
+   },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002820147",
+         "name": "Black Mesh Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 20,
+         "category": 2,
+         "rating": 3.2,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0430201405053680M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shirts03.jpg"
+      }
+   },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002910572",
+         "name": "Grey Cropped Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 26.99,
+         "category": 2,
+         "rating": 4.7,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/0900631B81C9387BM.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shirts04.jpg"
+      }
+   },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5002990740",
+         "name": "Black Cropped Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 48.99,
+         "category": 2,
+         "rating": 4.8,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1029201317111469M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shirts05.jpg"
+      }
+   },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003050248",
+         "name": "White Sleeveless Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 19.99,
+         "category": 2,
+         "rating": 4.4,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0918201520303373C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shirts06.jpg"
+      }
+   },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003070787",
+         "name": "Military Green Sleeveless Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 19.99,
+         "category": 2,
+         "rating": 4.4,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1119201520340305C.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shirts07.jpg"
+      }
+   },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003090182",
+         "name": "Black Sleeveless Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 19.99,
+         "category": 2,
+         "rating": 4.8,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072274M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shirts08.jpg"
+      }
+   },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003090186",
+         "name": "Blue Sleeveless Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 19.99,
+         "category": 2,
+         "rating": 5,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072924M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shirts09.jpg"
+      }
+   },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003161326",
+         "name": "Red Shirt",
+         "description": "It is a cool and versatile model, ideal for physical activities. This is a low-cut, mesh blouse with a mesh overlay.",
+         "price": 24.99,
+         "category": 2,
+         "rating": 4.7,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0821201317103183M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shirts10.jpg"
+      }
+   },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003230723",
+         "name": "Blue Running Shorts",
+         "description": "Loose shorts made of satin fabric with a gathered waistband. Double model: inner mesh short minimizes the friction between the legs providing more comfort. External fabric with quick drying. It has a detail with eyelets and fastening on the front.",
+         "price": 49.99,
+         "category": 5,
+         "rating": 4.3,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/0900631B81D676AEM.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shorts01.jpg"
+      }
+   },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003270936",
+         "name": "Rose Gold Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 34.99,
+         "category": 5,
+         "rating": 5,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0917201317033820M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shorts02.jpg"
+      }
+   },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003360384",
+         "name": "Black Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 34.99,
+         "category": 5,
+         "rating": 4.8,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0927201317061305M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shorts03.jpg"
+      }
+   },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003440111",
+         "name": "Green  Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 34.99,
+         "category": 5,
+         "rating": 3.8,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1023201317051585M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shorts04.jpg"
+      }
+   },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003540313",
+         "name": "Blue  Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 34.99,
+         "category": 5,
+         "rating": 3,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1108201317050996M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shorts05.jpg"
+      }
+   },
+    {
+      "pk": 26,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003560513",
+         "name": "Red  Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 34.99,
+         "category": 5,
+         "rating": 4.4,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0219201502115503C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shorts06.jpg"
+      }
+   },
+    {
+      "pk": 27,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003560948",
+         "name": "Black Mesh  Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 34.99,
+         "category": 5,
+         "rating": 5,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0610201317080834M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shorts07.jpg"
+      }
+   },
+    {
+      "pk": 28,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003570628",
+         "name": "White Snake Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 29.99,
+         "category": 5,
+         "rating": 4.3,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/0900631B818ABCB9M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shorts08.jpg"
+      }
+   },
+    {
+      "pk": 29,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003620308",
+         "name": "Black and White Pattern Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 29.99,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0422201517022488M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+         "image": "shorts09.jpg"
+      }
+   },
+    {
+      "pk": 30,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003690115",
+         "name": "Grey Courtfield Short Leggings",
+         "description": "Half thigh short made of corrugated mesh. Ideal for physical activities, its modeling and wide waist provide safety and comfort when exercising.",
+         "price": 29.99,
+         "category": 5,
+         "rating": 5,
+         "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0113201417050002M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+         "image": "shorts10.jpg"
+      }
+   }
+   ]
