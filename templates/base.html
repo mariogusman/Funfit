@@ -56,27 +56,21 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid fixed-top shadow-sm bg-white py-2">
         <div class="row">
             <!-- Logo -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font tex-black my-0 fw-bold"><strong>Funfit</strong></h2>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-lg-start d-flex justify-content-center">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link ">
+                    <h2 class="logo-font logo my-0 fw-bold fs-1"><strong>Funfit</strong></h2>
                 </a>
             </div>
             <!-- Search field -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
-                    <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-start" type="text" name="q"
-                            placeholder="What are you looking for?">
-                        <div class="input-group-append">
-                            <button class="form-control btn btn-black border-black rounded-0" type="submit">
-                                <span class="icon">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                            </button>
-                        </div>
+                    <div class="input-group search-group ps-3 rounded-3 border shadow-sm">
+                        <input type="text" class="form-control border-0" name="q" id="q" minlength="3"
+                            placeholder="What are you looking for?" autofocus required>
+                        <button class="btn search-btn pe-4"><i class="fas fa-search"></i></button>
                     </div>
                 </form>
 
@@ -89,7 +83,7 @@
                         <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="far fa-user-circle fa-lg"></i></div>
+                                <div><i class="bi bi-person-circle fs-5"></i></div>
                                 <p class="my-0">Account <i class="fas fa-sm ms-1 fa-chevron-down"></i></p>
                             </div>
                         </a>
@@ -99,11 +93,12 @@
                             {% if request.user.is_authenticated %}
                             <!-- If superuser can edit products -->
                             {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item"> Product Management</a>
+                            <a href="" class="dropdown-item"><i class="bi bi-pencil-square"></i> Manage Products</a>
                             {% endif %}
-                            <a href="" class="dropdown-item">My Profile</a>
+                            <a href="" class="dropdown-item"><i class="bi bi-person-badge"></i> My Profile</a>
                             <!-- logout, signup and login below from allauth -->
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="bi bi-x-lg"></i>
+                                Logout</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>

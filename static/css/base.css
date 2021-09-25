@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgba(255, 245, 238,0.2);
+    background-color: rgba(255, 245, 238, 0.2);
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
@@ -22,6 +22,10 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+.logo {
+    color: rgb(53, 53, 53);
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -30,6 +34,50 @@ body {
     background: black;
     color: white;
     min-width: 260px;
+}
+
+.search-group {
+    background-color: white;
+}
+
+.search-btn {
+    background-color: white;
+    color: #535353;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #f9e7ff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 0%);
+}
+
+#query {
+    font-size: xx-large;
+    font-weight: 600;
+    color: #535353;
+    border: 0;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 20px -5px rgba(128, 128, 128, 0.178);
+}
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 .btn-black {
@@ -59,9 +107,9 @@ body {
 
 /* increases container size on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -73,7 +121,8 @@ body {
         left: 0;
         z-index: 1030;
     }
-/* pushes body down to bottom of main page */
+
+    /* pushes body down to bottom of main page */
     .header-container {
         padding-top: 164px;
     }
