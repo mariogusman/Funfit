@@ -1,0 +1,61 @@
+<ul>
+    <!-- Button to open the search field -->
+    <li class="list-inline-item">
+        <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-search fa-lg"></i></div>
+                <p class="my-0">Search</p>
+            </div>
+        </a>
+        <!-- Search field -->
+        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+            <form method="GET" action="">
+                <div class="input-group search-group ps-3 rounded-3 border shadow-sm">
+                    <input type="text" class="form-control border-0" name="q" id="q" minlength="3"
+                        placeholder="What are you looking for?" autofocus required>
+                    <button class="btn search-btn pe-4"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </li>
+    <!-- Button to open Account menu -->
+    <li class="list-inline-item dropdown">
+        <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="bi bi-person-circle fs-5"></i></div>
+                <p class="my-0">Account <i class="fas fa-sm ms-1 fa-chevron-down"></i></p>
+            </div>
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="" class="dropdown-item"><i class="bi bi-pencil-square"></i> Manage Products</a>
+            {% endif %}
+            <a href="" class="dropdown-item"><i class="bi bi-person-badge"></i> My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="bi bi-x-lg"></i>
+                Logout</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            {% endif %}
+        </div>
+    </li>
+    <!-- Shopping bag -->
+    <li class="list-inline-item">
+        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
+            href="">
+            <div class="text-center">
+                <div><i class="bi bi-bag fs-5"></i></div>
+                <p class="my-0">
+                    {% if grand_total %}
+                    ${{ grand_total|floatformat:2 }}
+                    {% else %}
+                    $0.00
+                    {% endif %}
+                </p>
+            </div>
+        </a>
+    </li>
+</ul>
