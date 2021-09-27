@@ -90,6 +90,10 @@ mark {
     box-shadow: 0 5px 20px -5px rgba(128, 128, 128, 0.178);
 }
 
+.product-image {
+    max-height: 440px !important;
+}
+
 
 .overlay {
     height: 100%;
@@ -146,5 +150,17 @@ mark {
     /* pushes body down to bottom of main page */
     .header-container {
         padding-top: 164px;
+    }
+
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 135px;
+    }
+
+    body {
+        height: calc(100vh - 135px);
     }
 }

@@ -14,12 +14,12 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 def product_detail(request, product_id):
-    """ Shows  products details """
+    """ A view to show individual product details """
 
-    products = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, 'products/product_detail.html', context)
