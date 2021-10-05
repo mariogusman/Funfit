@@ -26,9 +26,12 @@ class OrderForm(forms.ModelForm):
             'county': 'County',
         }
 
+        #sets autofocus to full name
         self.fields['full_name'].widget.attrs['autofocus'] = True
+
         for field in self.fields:
             if self.fields[field].required:
+                #if a field is required will add a star 
                 placeholder = f'{placeholders[field]} *'
             else:
                 placeholder = placeholders[field]
