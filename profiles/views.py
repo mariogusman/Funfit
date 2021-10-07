@@ -10,7 +10,7 @@ def profile(request):
     """ shows user own profile """
     profile = get_object_or_404(UserProfile, user=request.user)
 
-    #to save user changes in their profile
+    # to save user changes in their profile
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
@@ -28,6 +28,7 @@ def profile(request):
     }
 
     return render(request, template, context)
+
 
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)

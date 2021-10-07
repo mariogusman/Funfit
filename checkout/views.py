@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (render, redirect, reverse,
+                              get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.conf import settings
 from .forms import OrderForm
@@ -10,6 +11,7 @@ from bag.contexts import bag_contents
 
 import stripe
 import json
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -25,6 +27,7 @@ def cache_checkout_data(request):
     except Exception as e:
         print("Unable to process payment")
         return HttpResponse(content=e, status=400)
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -76,7 +79,8 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
         else:
             print("There was an error with the form.")
     else:
@@ -94,7 +98,8 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        #if user is authenticated will pre-fill delivery info with saved info from profile
+        # if user is authenticated will pre-fill delivery info
+        # with saved info from profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
@@ -109,11 +114,11 @@ def checkout(request):
                     'street_address2': profile.default_street_address2,
                     'county': profile.default_county,
                 })
-            #if no details render empty
+            # if no details render empty
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
         else:
-            #if not auth render empty form
+            # if not auth render empty form
             order_form = OrderForm()
 
     template = 'checkout/checkout.html'
@@ -133,7 +138,8 @@ def checkout_success(request, order_number):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
-    #checks if user is authenticated to assossiate the order to the user profile
+    # checks if user is authenticated to assossiate
+    # the order to the user profile
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
         # connects user and order
@@ -154,7 +160,7 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-    
+
     # deletes bag contents from session as purchase was successful
     if 'bag' in request.session:
         del request.session['bag']

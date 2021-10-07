@@ -6,19 +6,20 @@ from .widgets import CustomClearableFileInput
 class ProductForm(forms.ModelForm):
 
     class Meta:
-        #defines the model and fields to be included
+        # defines the model and fields to be included
         model = Product
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(label='Image', required=False,
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
-        #override/change fields below using friendly names
+        # override/change fields below using friendly names
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
 
-        #will show friendly names instead of ids
+        # will show friendly names instead of ids
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'rounded-3'

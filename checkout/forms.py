@@ -5,15 +5,17 @@ from .models import Order
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('full_name', 'email', 'phone_number','street_address1', 'street_address2',
-                  'town_or_city', 'postcode', 'country','county',)
+        fields = ('full_name', 'email', 'phone_number', 'street_address1',
+                  'street_address2', 'town_or_city', 'postcode',
+                  'country', 'county',)
 
     def __init__(self, *args, **kwargs):
         """
-        adds placeholders and classes, remove auto-generated labels and sets autofocus to the first field
+        adds placeholders and classes, remove auto-generated labels
+        and sets autofocus to the first field
         """
         super().__init__(*args, **kwargs)
-        #placeholders on the fields to avoid weird text
+        # placeholders on the fields to avoid weird text
         placeholders = {
             'full_name': 'Full Name',
             'email': 'Email Address',
@@ -26,12 +28,12 @@ class OrderForm(forms.ModelForm):
             'county': 'County, State or Region',
         }
 
-        #sets autofocus to full name
+        # sets autofocus to full name
         self.fields['full_name'].widget.attrs['autofocus'] = True
 
         for field in self.fields:
             if self.fields[field].required:
-                #if a field is required will add a star 
+                # if a field is required will add a star
                 placeholder = f'{placeholders[field]} *'
             else:
                 placeholder = placeholders[field]

@@ -1,9 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
-from django.contrib import messages
-from products.models import Product
-
 
 # Create your views here.
+
 
 def view_bag(request):
     """ View that returns the bag page """
@@ -35,6 +33,7 @@ def adjust_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 
+
 def remove_from_bag(request, item_id):
     """ removes an item from the user's bag """
     try:
@@ -47,7 +46,7 @@ def remove_from_bag(request, item_id):
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
                 bag.pop(item_id)
-            
+
         else:
             bag.pop(item_id)
 
@@ -56,10 +55,10 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         return HttpResponse(status=500)
 
+
 def add_to_bag(request, item_id):
     """ Adds a qty of the desired product to the user's bag """
 
-    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
@@ -82,10 +81,6 @@ def add_to_bag(request, item_id):
             bag[item_id] += quantity
         else:
             bag[item_id] = quantity
-
-
-    # if the item is already in the bag will add to that quantity
-    # else, if not in the bag, it will add that specified quantity
 
     request.session['bag'] = bag
     return redirect(redirect_url)
