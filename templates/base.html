@@ -140,13 +140,13 @@
                         </div>
                     </li>
                     <!-- Shopping bag -->
-                    <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                    <li class="list-inline-item text-dark">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %} text-black {% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><i class="bi bi-bag fs-5"></i>
+                                <div><i class="bi bi-bag fs-5 text-dark"></i>
                                 </div>
-                                <p class="my-0">
+                                <p class="my-0 text-dark">
                                     <!-- Print formatted grand_total variable if true, else print zero.
                                          "grand_total" is defined in bag/context.py -->
                                     {% if grand_total %}

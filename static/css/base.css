@@ -133,7 +133,6 @@ mark {
 }
 
 /* Allauth form formatting - From CI BoutiqueAdo project */
-
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     /* mt-4 */
@@ -154,11 +153,12 @@ mark {
     color: #aab7c4;
 }
 
-.allauth-form-inner-content a {
-    color: #17a2b8;
-    /* text-info */
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #ffdada !important;
 }
-
 
 /*  Media Queries */
 
