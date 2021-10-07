@@ -86,3 +86,23 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
+def edit_product(request, product_id):
+    """ allows admin to edit products already created """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        #informing im editing the product defined above (instance=product)
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        form = ProductForm(instance=product)
+
+    template = 'products/edit_product.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
