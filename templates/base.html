@@ -125,7 +125,8 @@
                             {% if request.user.is_authenticated %}
                             <!-- If superuser can edit products -->
                             {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item"><i class="bi bi-pencil-square"></i> Manage Products</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item"><i class="bi bi-pencil-square"></i>
+                                Manage Products</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item"><i class="bi bi-person-badge"></i> My
                                 Profile</a>
