@@ -1,0 +1,6 @@
+/* From CI BoutiqueAdo - will limit max size of order history and add a scrollbar if needed */
+.order-history {
+    max-height: 416px;
+    /* height of profile form + submit button */
+    overflow-y: auto;
+}
