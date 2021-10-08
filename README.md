@@ -1,32 +1,9 @@
 # Milestone Project 4 - Lotus Activewear</h1>
-
 [Click here to view the live project :link:](https://lotus-activewear.herokuapp.com/)
+<br>
+[Lotus Logo](/readme/lotus-logo.jpg)
 
 Lotius Activewear is a fictional e-commerce website that sells Gym/Yoga clothes for woman. This was developed for my Code Institute Milestone 4 Project (Full Stack Frameworks with Django).
-
-# Table Of Contents
-
-1. [User Experience (UX)](#user-experience)
-    - [User stories](#user-stories)
-    - [Design](#design)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4.  [Languages Used](#languages-used)
-5.  [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
-6.  [Database](#database)
-7.  [Testing](#testing)
-    - [Testing User Stories](#testing-user-stories)
-    - [Additional Testing](#additional-testing)
-    - [Bugs and Fixes](#bugs-and-fixes)
-8. [Deployment](#deployment)
-    - [Heroku](#heroku)
-    - [Stripe and Database](#stripe-and-database)
-    - [GitHub](#github-pages)
-9. [Credits](#credits)
-    - [Code](#code)
-    - [Content](#content)
-    - [Media](#media)
-    - [Acknowledgements](#acknowledgements)
 
 # User Experience
 
@@ -86,7 +63,8 @@ The main goal here is to provide a good shopping experience to potential custome
 - **Product Quantity Updates** - While shopping or in their shopping bag, users can adjust the quantity of products they wish to purchase through an intuitive interface.
 - **Persistent Bag Contents** - While navigating and shopping on Lotus, users will have a persistent shopping experience being able to leave their bag for a few hours or days and then come back to manage the contents and proceed to the checkout.
 - **Profile Management** - Through their profile dashboard, users can update their delivery details as well as review their order history.
-- **Product Management** - Super users/admins are can create, update and delete products through a easy to use interface..
+- **Product Management** - Super users/admins are can create, update and delete products through a easy to use interface.
+- **Checkout** - Products can be purchased through an intuitive checkout interface backed by Stripe Payments.
 
 # Technologies Used
 
@@ -117,7 +95,6 @@ The main goal here is to provide a good shopping experience to potential custome
 - [SQLite3](https://www.sqlite.org/index.html/) - SQLite is a relational database management system pre-built into Django.
 - [Gitpod](https://www.gitpod.io/) - Online IDE used to developed the project.
 - [Favicon.io](https://favicon.io/favicon-converter/) - Used to convert image to Favicon.
-- [Am I Responsive](http://ami.responsivedesign.is/?url=http%3A%2F%2Fms3-keto-recipes.herokuapp.com%2Frecipes%2F60c3445a59caadfa8d633b29) - To generate the demo image for this project.
 
 # Testing
 ## Validators 
