@@ -155,7 +155,7 @@ mark {
 
 .dropdown-item.active,
 .dropdown-item:active {
-    color: #fff !important;
+    color: black !important;
     text-decoration: none;
     background-color: #ffdada !important;
 }
