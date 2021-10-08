@@ -1,7 +1,8 @@
 # Milestone Project 4 - Lotus Activewear</h1>
 [Click here to view the live project :link:](https://lotus-activewear.herokuapp.com/)
 <br>
-[Lotus Logo](/readme/lotus-logo.jpg)
+
+![Lotus-Logo](/readme/lotus-logo.jpg)
 
 Lotius Activewear is a fictional e-commerce website that sells Gym/Yoga clothes for woman. This was developed for my Code Institute Milestone 4 Project (Full Stack Frameworks with Django).
 
